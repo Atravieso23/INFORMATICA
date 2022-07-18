@@ -12,3 +12,5 @@ def main():
     fun(miVar)
     print(miVar)
 main()
+
+#resuelto

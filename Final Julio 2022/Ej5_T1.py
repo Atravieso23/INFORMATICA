@@ -10,3 +10,5 @@ def main():
     fun(lst,"x")
     print(lst)
 main()
+
+#Resuelto

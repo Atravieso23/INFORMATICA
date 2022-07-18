@@ -9,3 +9,5 @@ def main():
     x=fun(x,1)
     print(x)
 main()
+
+#Resuelto

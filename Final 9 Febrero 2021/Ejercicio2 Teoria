@@ -1,0 +1,17 @@
+def fun(lst, val):
+    i = 0
+    largo = len(lst)
+    while i < largo:
+        if lst[i] == val:
+            lst.pop(i)
+        else:
+            i += 1
+
+def main():
+    lst = [2, 4, 2, 6, 2]
+    fun(lst, 2)
+    print(lst)
+
+main()
+
+#Resuelto

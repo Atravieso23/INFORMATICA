@@ -1,0 +1,16 @@
+def fun(lst, val):
+    encontro = False
+    while i < len(lst) and not encontro:
+        if val<lst[i]:
+            encontro=True
+        else:
+            i += 1
+    lst.insert(i, val)
+
+def main():
+    lst = ['b', 'd', 's']
+    fun(lst, 'c')
+    print(lst)
+main()
+
+#Resuelto

@@ -1,0 +1,17 @@
+def fun(lst, di):
+    di={}
+    i = len(lst) - 1
+    for item in lst:
+        clave = lst[i]
+        di[clave] = item
+        i -= 1
+
+def main():
+    di = {}
+    lst = ['a','b','c','d']
+    fun(lst, di)
+    print(di)
+
+main()
+
+#Resuelto
