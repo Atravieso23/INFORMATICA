@@ -1,0 +1,13 @@
+def fun(t,a):
+    i=0
+    while i<len(t) and t[i]<a:
+        i+=1
+    return t[:1] + [a] + t[i:]
+
+def main():
+    x=[10,20,30,40,50]
+    w=18-12
+    x= fun(x,w)
+    print(x)
+main()
+

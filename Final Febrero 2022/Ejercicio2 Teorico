@@ -1,0 +1,13 @@
+def fun (data,k,v):
+    if data.get(k)!=None:
+        data[k]=v
+
+
+def main():
+    x={"Buenos Aires":{"Tandil":{"sup":447,"pob":1199}},
+        "San Luis":{"Merlo":{"sup":321,"pob":777}},
+        "Corrientes":{"Goya":{"sup":1234,"pob":999}}
+        }
+    fun(x,"Corrientes",{"Esquina":{"sup":666,"pob":333}})
+    print(x["Corrientes"])
+main()

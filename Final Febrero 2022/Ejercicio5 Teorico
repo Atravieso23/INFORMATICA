@@ -1,0 +1,13 @@
+def fun(lst,di):
+    miDic={}
+    i=0
+    while i >=0 and di.get(lst[i])==None:
+        clave=lst[i]
+        di[clave] =i
+        i-=1
+def main():
+    miDic={"x":10}
+    lst=["a","b","x","c"]
+    fun(lst,miDic)
+    print(miDic)
+main()

@@ -1,0 +1,11 @@
+def fun(var):
+    aux=-10
+    for a in range(len(var)-1):
+        for b in range(a+1,len(var)):
+            if var[a]>var[b]:
+                var[b]=aux
+def main():
+    miVar=[23,45,10]
+    fun(miVar)
+    print(miVar)
+main()

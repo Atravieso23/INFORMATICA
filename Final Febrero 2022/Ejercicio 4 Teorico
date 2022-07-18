@@ -1,0 +1,31 @@
+#       *
+#      **
+#     ***
+# *******
+#     ***
+#      **
+#       *
+
+from calendar import c
+
+
+def figura(b):
+    for f in range(0,b):
+        for c in range(0,b):
+            if #condicion#:
+                print(" *", end="")
+            else:
+                print(" ",end="")
+        print()
+def main():
+    figura(7)
+main()
+
+# Opciones
+
+# f==b//2 or f<=c and f+c>=b-1
+# f==b//2 or f<=c
+# f==b//2 or f>=c
+# f==b//2 or f>=c and f+c<=b-1
+# f==b//2 or f>c and f+c==b-1
+# c==b//2 or f>c and f+c==b-1
