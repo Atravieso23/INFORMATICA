@@ -1,0 +1,10 @@
+def fun(nombres):
+    nombres.insert(1,'Charly')
+    nombres = nombres[:-1]
+def main():
+    names = ['Tom', 'Tommy', 'Tomas']
+    fun(names)
+    print(names)
+main()
+
+#Resuelto

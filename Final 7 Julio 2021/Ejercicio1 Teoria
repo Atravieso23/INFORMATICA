@@ -1,0 +1,7 @@
+def comparar(a, b, c):
+    if ((a and (b or c)) != ((a and b) or (a and c))):
+        return True
+    
+    else:
+        return False
+    

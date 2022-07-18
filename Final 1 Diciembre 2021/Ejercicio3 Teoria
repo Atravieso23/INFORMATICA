@@ -1,0 +1,13 @@
+def fun(lst, val):
+    largo=len(lst)
+    for i in range(0,largo):
+        if lst[i]==val:
+            lst.pop(i)
+
+def main():
+    lst = [1,2,3,4,4,3,2,1]
+    fun(lst,2)
+    print(lst)
+main()
+
+#Resuelto

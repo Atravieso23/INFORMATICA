@@ -1,0 +1,42 @@
+
+# Completar las líneas en blanco ( ________ ) , sin agregar ni cambiar renglones al código mostrado
+# de la función cargarDi.
+# La función cargarDi recibe por parámetro un lista lst y debe retornar un diccionario cuyo valores del
+# diccionario son cada uno de los valores de la lista lst, y cuya clave de cada item del diccionario deberá ser
+# un número entero entre 1 y 100 generado en forma aleatoria.
+# Importante: Tener en cuenta que si al generar un número aleatorio, este ya está usado cómo clave en el
+# diccionario, se deberá crear otro número aleatorio hasta encontrar uno que no esté usado cómo clave.
+
+
+
+
+#  def cargarDi (lst):
+#     di=___________
+#     for item in lst:
+#         clave = _______________________
+#         __________ clave in __________ :
+#             _______ = random.randint(___,___)
+#             di[_________]= item
+#     return ________
+# def main():
+#   lst=['Tom', 'Charly', 'Tommy', 'Tomas']
+#   di = cargarDi(lst)
+#   print(di)
+# main()
+
+import random
+def cargarDi (lst):
+    di={}
+    for item in lst:
+        clave = ""
+        for clave in lst:
+            clave = random.randint(1,100)
+            di[clave]= item
+    return di
+def main():
+    lst=['Tom', 'Charly', 'Tommy', 'Tomas']
+    di = cargarDi(lst)
+    print(di)
+main()
+
+#MAL
