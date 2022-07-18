@@ -1,0 +1,13 @@
+def fun(di,nom,parcial,valor):
+    if di.get(nom)!=None:
+        i=di.get(nom)[1]
+        if di[nom][i]["a"].get(parcial)==None:
+            di[nom][i]["a"][parcial]=valor
+def main():
+    x={"Juan":[{"a":{"pp1":"A","pp2":"D"}},0],
+    "Lola":[{"p1":{"pp2":"A","pp3":"A"}},1],
+    "Charly":[{746:{"pp1":"A","pp3":"A"}},2]
+    }
+    fun(x,"Juan","pp3","A")
+    print(x["Juan"])
+main()

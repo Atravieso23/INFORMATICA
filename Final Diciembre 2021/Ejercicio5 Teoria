@@ -1,0 +1,15 @@
+def fun(lst,di):
+    di={}
+    i=0
+    while i < len(lst):
+        clave=lst[i]
+        di[clave]=i
+        i=i+1
+def main():
+    di={"x":10}
+    lst=["a","b"]
+    fun(lst,di)
+    print(di)
+main()
+
+#resuelto a medias

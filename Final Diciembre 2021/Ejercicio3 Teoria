@@ -1,0 +1,16 @@
+def fun(var):
+    aux=-10
+    var=[]
+    for i in range (0,len(var)-1):
+        for j in range(i+1,len(var)):
+            if var[i]>var[j]:
+                aux=var[j]
+                var[j]=var[i]
+                var[i]=aux
+def main():
+    miVar=[23,45,10]
+    fun(miVar)
+    print(miVar)
+main()
+
+#No resuelto

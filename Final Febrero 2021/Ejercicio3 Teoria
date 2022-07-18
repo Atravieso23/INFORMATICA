@@ -1,0 +1,12 @@
+def fun(lst):
+    lst[0][1]='12'
+    suma=0
+    for per in lst:
+        suma+=int(per[1])
+    return suma/len(lst)
+def main():
+    lst=[("Paula",'10'),("Lucas",'20'),("Andrea",'15')]
+    print("{:.2f}".format(fun(lst)))
+main()
+
+#Resuelto con dudas

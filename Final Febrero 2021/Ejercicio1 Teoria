@@ -1,0 +1,16 @@
+import random
+def fun(a,b):
+    x = not(a and b)
+    y = not a and not b
+    if x != y:
+        res = 50
+    else:
+        res = 20
+    return res
+def main():
+    a = random.randint(0,1)
+    b = random.randint(0,1)
+    print("{1:d} {0:d}".format(fun(a,b),fun(b,a)))
+main()
+
+#resuelto
