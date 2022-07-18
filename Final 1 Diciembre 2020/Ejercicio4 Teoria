@@ -8,8 +8,6 @@
 # diccionario, se deberá crear otro número aleatorio hasta encontrar uno que no esté usado cómo clave.
 
 
-
-
 #  def cargarDi (lst):
 #     di=___________
 #     for item in lst:
@@ -28,8 +26,8 @@ import random
 def cargarDi (lst):
     di={}
     for item in lst:
-        clave = ""
-        for clave in lst:
+        clave = random.randint(1,100)
+        if clave not in di:
             clave = random.randint(1,100)
             di[clave]= item
     return di
@@ -39,4 +37,3 @@ def main():
     print(di)
 main()
 
-#MAL

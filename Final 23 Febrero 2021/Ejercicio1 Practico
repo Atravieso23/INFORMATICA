@@ -1,0 +1,40 @@
+def cargar(lst):
+    for i in range(len(lst)):
+        lst[i]=(lst[i][:-1]).split(',')
+    return lst
+
+def minimos(lstEnergia):
+    lstE=cargar(lstEnergia)
+    lstaños=[]
+    lstAñoEnergia=[]
+    lstFinal=[]
+    for i in range (len(lstE)):
+        año=lstE[i][0][:2]
+        if año not in lstaños:
+            lstaños.append(año)
+    for i in lstaños:
+        suma=0
+        for j in range(len(lstE)):
+            cantidad=float(lstE[j][2])
+            if i==lstE[j][0][:2]:
+                suma+=cantidad
+        lstAñoEnergia.append([i,suma])
+    
+    for pasada in range(len(lstAñoEnergia)-1):
+        for i in range(len(lstAñoEnergia)-1):
+            if lstAñoEnergia[i][1]>lstAñoEnergia[i+1][1]:
+                aux=lstAñoEnergia[i]
+                lstAñoEnergia[i]=lstAñoEnergia[i+1]
+                lstAñoEnergia[i+1]=aux    
+    
+    menor= tuple(lstAñoEnergia[0])
+    lstFinal.append(menor)
+    return lstFinal
+    
+
+
+def main():
+    print("Prueba para el EJ01")
+    lstEnergia = ['101205,1,24.2\n', '110607,8,54.4\n', '120318,3,18.1\n','090501,9,88.4\n', '101209,1,26.8\n', '101217,3,22.4\n', '190101,8,44.0\n']
+    print(minimos(lstEnergia))
+main()
